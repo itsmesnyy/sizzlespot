@@ -204,7 +204,8 @@
     }
 }
  .btn {
-            width: 250px; /* Adjust width as needed */
+             width: 190px; /* Adjust width as needed */
+            height: 60px;
         }
 /* Improved styling for the Book a Table button */
 .btn-transparent-white {
