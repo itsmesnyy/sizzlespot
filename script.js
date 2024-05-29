@@ -22,6 +22,10 @@ function toggleMenu() {
     const navbarLinks = document.querySelector('.navbar-links');
     navbarLinks.classList.toggle('active');
 }
+document.getElementById('navbarToggleBtn').addEventListener('click', function() {
+    const navbarLinks = document.getElementById('navbarLinks');
+    navbarLinks.classList.toggle('active');
+});
 
         /* Add this JavaScript to your existing script tag or script file */
 window.addEventListener('scroll', function() {
