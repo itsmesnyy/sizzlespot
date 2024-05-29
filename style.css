@@ -180,7 +180,9 @@
 .catchphrase .btn {
     margin-top: 10px; /* Add margin at the top to create space between the button and the line */
 }
-
+.catchphrase a{
+    color: white;
+}
 #about {
     padding-top: 618px; /* Adjust the padding-top value according to your navigation bar height */
 } 
