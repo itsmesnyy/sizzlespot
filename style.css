@@ -7,7 +7,6 @@
             height: 50vh;
         }
 
-
         body::after {
             content: "";
             position: absolute;
