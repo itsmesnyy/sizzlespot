@@ -226,7 +226,11 @@
 .display5{
     font-family: "Kanit", sans-serif;
 }
-
+@media screen and (max-width: 768px) {
+    #about {
+        padding-top: 100vh; /* Adjust padding top for smaller screens */
+    }
+}
 /* Fade-in animation */
 .fade-in {
     animation: fadeInAnimation 1s ease forwards;
