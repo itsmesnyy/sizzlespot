@@ -204,7 +204,10 @@
     transition: all 0.3s ease;
     box-shadow: 0 0 20px 5px rgba(255, 255, 0, 0.3); /* Yellow shadow with adjusted brightness and width */
 }
-
+.btn-transparent-white a {
+    color: #fff; /* White text color for anchor elements */
+    text-decoration: none; /* Remove underline */
+}
 /* Hover effect for the Book a Table button */
 .btn-transparent-white:hover {
     background-color: rgba(255, 255, 255, 0.5); /* White background on hover */
