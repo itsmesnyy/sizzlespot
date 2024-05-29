@@ -189,6 +189,20 @@
 .display5{
     font-family: "Kanit", sans-serif;
 }
+
+/* Fade-in animation */
+.fade-in {
+    animation: fadeInAnimation 1s ease forwards;
+}
+
+@keyframes fadeInAnimation {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
  .btn {
             width: 250px; /* Adjust width as needed */
         }
