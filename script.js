@@ -94,6 +94,14 @@ function isInViewport(element) {
         rect.bottom <= (window.innerHeight || document.documentElement.clientHeight)
     );
 }
+document.addEventListener('DOMContentLoaded', function () {
+    const toggleButton = document.querySelector('.navbar-toggle-btn');
+    const navbarLinks = document.querySelector('.navbar-links');
+
+    toggleButton.addEventListener('click', function () {
+        navbarLinks.classList.toggle('active');
+    });
+});
 
 // Add JavaScript to trigger animation when the "Book a Table" section is scrolled into view
 window.addEventListener('scroll', function() {
