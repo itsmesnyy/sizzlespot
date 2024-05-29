@@ -18,6 +18,10 @@ function scrollToMenu() {
     const menuSection = document.getElementById('menu');
     menuSection.scrollIntoView({ behavior: 'smooth' });
 }
+function toggleMenu() {
+    const navbarLinks = document.querySelector('.navbar-links');
+    navbarLinks.classList.toggle('active');
+}
 
         /* Add this JavaScript to your existing script tag or script file */
 window.addEventListener('scroll', function() {
