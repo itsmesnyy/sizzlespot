@@ -1,4 +1,4 @@
- /* Set background image */
+
         body {
             background-image: url(https://images.unsplash.com/photo-1531973968078-9bb02785f13d?q=80&w=1985&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
             background-size: cover;
@@ -18,7 +18,7 @@
             background-size: cover;
             background-repeat: no-repeat;
             background-position: center;
-            filter: brightness(40%); /* Reduce brightness to 70% */
+            filter: brightness(40%); 
             z-index: -1;
         }
         /*nav {
@@ -40,10 +40,10 @@
     nav {
         background-color: black;
     padding: 10px 20px;
-    position: fixed; /* Add this line to make the navbar fixed */
-    top: 0; /* Position the navbar at the top of the viewport */
-    width: 100%; /* Set the width to occupy the full viewport width */
-    z-index: 1000; /* Set a high z-index value to ensure the navbar appears above other content */
+    position: fixed;
+    top: 0; 
+    width: 100%; 
+    z-index: 1000; 
 }
 
 .navbar-container {
@@ -61,9 +61,6 @@
     animation: fadeIn 1s ease-out;
 }
 
-/* Pseudo-elements for border effect */
-
-
 .navbar-brand::before {
     top: 0;
     left: 0;
@@ -78,14 +75,14 @@
     width: 100%;
 }
 
-/* Hover effect for the logo */
+
 .navbar-brand:hover {
     transform: scale(1.05);
     color: #fff;
     text-shadow: 0 0 10px rgba(255, 255, 0, 0.9);
 }
 
-/* Keyframes for the fade-in animation */
+
 @keyframes fadeIn {
     from {
         opacity: 0;
@@ -110,22 +107,22 @@
 .navbar-list li a {
     color: white;
     text-decoration: none;
-    position: relative; /* Ensure the parent element has a defined position */
+    position: relative;
 }
 
 .navbar-list li a::after {
-    content: ''; /* Add a pseudo-element for the line */
+    content: '';
     position: absolute;
-    bottom: -3px; /* Adjust the position of the line */
+    bottom: -3px; 
     left: 0;
     width: 100%;
-    height: 2px; /* Set the height of the line */
-    background-color: transparent; /* Initial background color */
-    transition: background-color 0.3s; /* Add transition effect to color change */
+    height: 2px;
+    background-color: transparent;
+    transition: background-color 0.3s; 
 }
 
 .navbar-list li a:hover::after {
-    background-color: #ffcc00; /* Change background color on hover */
+    background-color: #ffcc00;
 }
 
 .elements{
@@ -134,7 +131,7 @@
 }
 
 .navbar-list li {
-    margin: 0 40px; /* Increased spacing */
+    margin: 0 40px;
 }
 
 .navbar-list li a {
@@ -171,7 +168,6 @@
         margin: 10px 0;
     }
 }
-    /* Hide the hamburger icon for larger screens */
     @media screen and (min-width: 769px) {
         .navbar-toggle-btn {
             display: none;
@@ -197,39 +193,38 @@
             left: 50%;
             transform: translate(-50%, -50%);
         }
-/* Updated styling for the sl-text */
 .catchphrase .sl-text {
     font-family: "Montserrat", sans-serif;
-    font-size: 48px; /* Increase the font size */
-    letter-spacing: 4px; /* Adjust letter spacing */
-    font-weight: bold; /* Set font weight to bold */
-    color: #ffffff; /* White color */
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Add a subtle shadow */
-    margin-top: 20px; /* Adjust top margin */
-    animation: slideIn 1s ease-in-out; /* Add a slide-in animation */
+    font-size: 48px; 
+    letter-spacing: 4px; 
+    font-weight: bold;
+    color: #ffffff; 
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); 
+    margin-top: 20px; 
+    animation: slideIn 1s ease-in-out; 
 }
 .catchphrase .sl-text {
-    margin-bottom: 5px; /* Add margin at the bottom to create space between sl-text and the line */
+    margin-bottom: 5px;
 }
 
 .catchphrase .btn {
-    margin-top: 10px; /* Add margin at the top to create space between the button and the line */
+    margin-top: 10px; 
 }
 .catchphrase a{
     color: white;
 }
 #about {
-    padding-top: 618px; /* Adjust the padding-top value according to your navigation bar height */
+    padding-top: 618px; 
 } 
 .display5{
     font-family: "Kanit", sans-serif;
 }
 @media screen and (max-width: 768px) {
     #about {
-        padding-top: 100vh; /* Adjust padding top for smaller screens */
+        padding-top: 100vh; 
     }
 }
-/* Fade-in animation */
+
 .fade-in {
     animation: fadeInAnimation 1s ease forwards;
 }
@@ -243,11 +238,11 @@
     }
 }
  .btn {
-             width: 200px; /* Adjust width as needed */
+             width: 200px; 
         }
-/* Improved styling for the Book a Table button */
+
 .btn-transparent-white {
-    border: 2px solid #fff; /* White border */
+    border: 2px solid #fff; 
     background-color: transparent;
     color: #fff;
     padding: 15px 30px;
@@ -257,23 +252,22 @@
     border-radius: 50px;
     cursor: pointer;
     transition: all 0.3s ease;
-    box-shadow: 0 0 20px 5px rgba(255, 255, 0, 0.3); /* Yellow shadow with adjusted brightness and width */
+    box-shadow: 0 0 20px 5px rgba(255, 255, 0, 0.3);
 }
 .btn-transparent-white a {
-    color: #fff; /* White text color for anchor elements */
-    text-decoration: none; /* Remove underline */
+    color: #fff; 
+    text-decoration: none;
 }
-/* Hover effect for the Book a Table button */
+
 .btn-transparent-white:hover {
-    background-color: rgba(255, 255, 255, 0.5); /* White background on hover */
-    color: #000; /* Black text color on hover */
-    border-color: #fff; /* White border color on hover */
-    transform: scale(1.05); /* Scale the button slightly on hover */
-    box-shadow: 0 0 30px 8px rgba(255, 255, 0, 0.5); /* Increase shadow size and width on hover */
+    background-color: rgba(255, 255, 255, 0.5);
+    color: #000;
+    border-color: #fff; 
+    transform: scale(1.05); 
+    box-shadow: 0 0 30px 8px rgba(255, 255, 0, 0.5); 
 }
 
 
-        /* Apply styles to animate the text */
 @keyframes slideUp {
     from {
         transform: translateY(100%);
@@ -285,7 +279,7 @@
 
 .animated-text {
     animation: slideUp 1s forwards;
-    transform: translateY(100%); /* Start with the text hidden below */
+    transform: translateY(100%); 
 }
 @keyframes slideInRight {
             from {
@@ -297,62 +291,60 @@
                 transform: translateX(0);
             }
         }
-/* Add this CSS to your existing CSS file or style tag */
-/* Add this CSS to your existing CSS file or style tag */
 #menu {
-    background-color: #0a0a0a; /* Dark gray or black background */
+    background-color: #0a0a0a; 
     color: #fff;
-    padding: 80px 0; /* Adjust padding as needed */
+    padding: 80px 0;
 }
 .card {
-    transition: transform 0.3s ease, background-color 0.3s ease; /* Add smooth transition effect for transform and background-color */
-    background-color: #bbbbbb; /* Light gray or off-white background */
-    color: #333; /* Dark gray text for contrast */
+    transition: transform 0.3s ease, background-color 0.3s ease; 
+    background-color: #bbbbbb;
+    color: #333; 
 }
 
 .card:hover {
-    transform: translateY(-10px); /* Move card up on hover */
+    transform: translateY(-10px);
     cursor:default;
 }
 
 .card .card-title,
 .card .card-text {
-    color: #000000; /* Ensure card title and text are white */
+    color: #000000; 
 }
 
 .carousel-control-prev-icon,
 .carousel-control-next-icon {
-    background-color: white; /* White background for the icons */
-    border-radius: 50%; /* Rounded icons */
-    width: 40px; /* Adjust icon size if needed */
-    height: 40px; /* Adjust icon size if needed */
-    background-size: 50%; /* Ensure the icon fills the button */
+    background-color: white; 
+    border-radius: 50%; 
+    width: 40px;
+    height: 40px; 
+    background-size: 50%; 
     background-repeat: no-repeat;
     background-position: center;
 }
 
 .carousel-control-prev,
 .carousel-control-next {
-    width: 5%; /* Adjust button size if needed */
-    opacity: 0.7; /* Slightly transparent buttons */
+    width: 5%;
+    opacity: 0.7; 
 }
 
 .carousel-control-prev:hover .carousel-control-prev-icon,
 .carousel-control-next:hover .carousel-control-next-icon {
-    background-color: #ccc; /* Lighter color on hover */
+    background-color: #ccc;
 }
 
 .carousel-control-prev:hover,
 .carousel-control-next:hover {
-    opacity: 1; /* Fully opaque on hover */
+    opacity: 1;
 }
 
 .carousel-control-prev-icon {
-    background-image: url('data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" fill="%23000" viewBox="0 0 8 8"%3E%3Cpath d="M4.5 0L0 4.5 4.5 8l.5-.5-3-3H8V4H2l3-3-.5-.5z"/%3E%3C/svg%3E'); /* Black left arrow icon */
+    background-image: url('data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" fill="%23000" viewBox="0 0 8 8"%3E%3Cpath d="M4.5 0L0 4.5 4.5 8l.5-.5-3-3H8V4H2l3-3-.5-.5z"/%3E%3C/svg%3E'); 
 }
 
 .carousel-control-next-icon {
-    background-image: url('data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" fill="%23000" viewBox="0 0 8 8"%3E%3Cpath d="M3.5 0L8 4.5 3.5 8l-.5-.5 3-3H0V4h6.5l-3-3 .5-.5z"/%3E%3C/svg%3E'); /* Black right arrow icon */
+    background-image: url('data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" fill="%23000" viewBox="0 0 8 8"%3E%3Cpath d="M3.5 0L8 4.5 3.5 8l-.5-.5 3-3H0V4h6.5l-3-3 .5-.5z"/%3E%3C/svg%3E');
 }
 
 #book-table {
@@ -413,8 +405,8 @@
 .book-table-form input[type="tel"]:hover,
 .book-table-form input[type="date"]:hover,
 .book-table-form input[type="time"]:hover {
-    border-bottom-color: #ffcc00; /* Change border color on hover */
-    transition: border-color 0.3s ease; /* Add transition effect */
+    border-bottom-color: #ffcc00; 
+    transition: border-color 0.3s ease; 
 }
 
 .book-table-form input[type="text"]:hover,
@@ -422,11 +414,10 @@
 .book-table-form input[type="tel"]:hover,
 .book-table-form input[type="date"]:hover,
 .book-table-form input[type="time"]:hover {
-    box-shadow: 0 0 10px rgba(255, 204, 0, 0.5); /* Add box-shadow effect on hover */
-    transition: box-shadow 0.3s ease; /* Add transition effect */
+    box-shadow: 0 0 10px rgba(255, 204, 0, 0.5); 
+    transition: box-shadow 0.3s ease; 
 }
 
-/* Animation */
 @keyframes slideInRight {
     from {
         opacity: 0;
@@ -438,7 +429,7 @@
     }
 }
 .book-table-form input::placeholder {
-    color: rgba(255, 255, 255, 0.5); /* Adjust the opacity as needed */
+    color: rgba(255, 255, 255, 0.5); 
 }
 
 .footer {
@@ -482,7 +473,7 @@
 }
 
 .social-icons li a {
-    color: #333; /* Change the color of the icons */
+    color: #333;
 }
 
 .social-icons li:hover {
@@ -496,5 +487,5 @@
 }
 
 .social-icons li svg path {
-    fill: #f0eeee; /* Change the color of the icon shapes */
+    fill: #f0eeee; 
 }
