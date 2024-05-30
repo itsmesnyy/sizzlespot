@@ -147,7 +147,7 @@ function scrollToBookTable() {
 }
 // Function to scroll to the footer (contact section)
 function scrollToContact() {
-    const footerSection = document.querySelector('Contact');
+    const footerSection =document.getElementById('Contact');
     footerSection.scrollIntoView({ behavior: 'smooth' });
 }
 // Function to scroll to the "Book a Table" section
